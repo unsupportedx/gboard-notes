@@ -2,6 +2,8 @@
 
 Three small changes to make Gboard easier to use.
 
+Base version: Gboard 18.5.6 beta · Final clean version: v22
+
 ## No clipboard limit
 
 Copied items stay in the clipboard. They are not deleted after a short time, and new items do not push out the old ones.
