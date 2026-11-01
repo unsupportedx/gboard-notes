@@ -5,118 +5,178 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <meta name="color-scheme" content="light dark" />
 <meta name="description" content="Gboard changes: clipboard limit raised to 100 with clipboard history kept, voice typing auto start, always-on microphone, and microphone timeout extended to 60 seconds. Based on Gboard 18.5.6 beta." />
-<meta name="keywords" content="Gboard clipboard limit, Gboard clipboard history, clipboard history, voice typing auto start, always on microphone, microphone timeout 60 seconds, Gboard voice input auto open, Gboard voice typing timeout, Gboard keep microphone on, Gboard clipboard items disappearing, Gboard 18.5.6 beta" />
+<meta name="keywords" content="Gboard clipboard limit, Gboard clipboard history, clipboard history, voice typing auto start, always on microphone, microphone timeout 60 seconds, Gboard voice input auto open, Gboard voice typing timeout, Gboard keep microphone on, Gboard clipboard items disappearing, Gboard clipboard history not saving, Gboard clipboard keeps clearing, Gboard voice typing stops while speaking, Gboard microphone closes after 5 seconds, Gboard microphone keeps turning off, how to keep Gboard microphone open, Gboard auto voice typing not working, Gboard clipboard limit problem, Gboard clipboard items deleted automatically, Gboard clipboard history keeps disappearing, Gboard clipboard not saving copied items, Gboard clipboard clears itself, Gboard voice typing stops mid sentence, Gboard microphone turns off while talking, Gboard voice input stops listening, Gboard dictation keeps stopping, Gboard microphone timeout too short, Gboard clipboard only saves few items, Gboard clipboard history empty, Gboard clipboard items vanish after copy, how to increase Gboard clipboard limit, how to stop Gboard clipboard from clearing, Gboard voice typing time limit, Gboard speech to text stops automatically, Gboard 18.5.6 beta" />
 <link rel="icon" href="data:," />
 <title>Gboard Changes</title>
 <style>
-:root{
---bg:#ffffff;
---fg:#1f2328;
---muted:#59636e;
---border:#d8dee4;
---card:#f6f8fa;
---sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
-}
-@media (prefers-color-scheme: dark){
-:root{
---bg:#0d1117;
---fg:#e6edf3;
---muted:#9ea7b3;
---border:#30363d;
---card:#161b22;
-}
-}
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--sans);line-height:1.6;-webkit-font-smoothing:antialiased}
-main{max-width:640px;margin:0 auto;padding:56px 24px 72px}
-@media (max-width:640px){main{padding:36px 20px 56px}}
-h1{font-size:32px;line-height:1.2;margin:0 0 10px;font-weight:700;letter-spacing:-.02em}
-.intro{font-size:17px;color:var(--muted);margin:0 0 36px}
-.feature{border:1px solid var(--border);background:var(--card);border-radius:10px;padding:20px 22px;margin-bottom:14px}
-.feature h2{font-size:18px;margin:0 0 6px;font-weight:650}
-.feature p{margin:0;color:var(--muted);font-size:15.5px}
-.num{display:inline-block;font-size:13px;font-weight:700;color:var(--muted);margin-bottom:8px}
-.how{margin-top:40px}
-.how h2{font-size:20px;margin:0 0 12px;font-weight:650}
-.how table{width:100%;border-collapse:collapse;font-size:15px}
-.how th,.how td{text-align:left;padding:10px 12px;border:1px solid var(--border);vertical-align:top}
-.how th{background:var(--card);font-weight:650}
-.how td:first-child{font-weight:600;white-space:nowrap}
-@media (max-width:480px){.how td:first-child{white-space:normal}}
-.why{margin-top:36px;border-top:1px solid var(--border);padding-top:24px}
-.why h2{font-size:20px;margin:0 0 8px;font-weight:650}
-.why p{margin:0;color:var(--muted);font-size:15.5px}
-.version{border:1px solid var(--border);border-radius:10px;padding:14px 22px;margin:-20px 0 28px;font-size:15.5px;color:var(--muted)}
-.version strong{color:var(--fg);font-weight:650}
-.tags{margin-top:36px;border-top:1px solid var(--border);padding-top:24px}
-.tags h2{font-size:20px;margin:0 0 14px;font-weight:650}
-.tags ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
-.tags li{border:1px solid var(--border);background:var(--card);border-radius:999px;padding:5px 13px;font-size:14px;color:var(--muted)}
+  :root{
+    --bg:#ffffff;
+    --fg:#1f2328;
+    --muted:#59636e;
+    --border:#d8dee4;
+    --card:#f6f8fa;
+    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#0d1117;
+      --fg:#e6edf3;
+      --muted:#9ea7b3;
+      --border:#30363d;
+      --card:#161b22;
+    }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--sans);line-height:1.6;-webkit-font-smoothing:antialiased}
+  main{max-width:640px;margin:0 auto;padding:56px 24px 72px}
+  @media (max-width:640px){main{padding:36px 20px 56px}}
+  h1{font-size:32px;line-height:1.2;margin:0 0 10px;font-weight:700;letter-spacing:-.02em}
+  .intro{font-size:17px;color:var(--muted);margin:0 0 36px}
+  .feature{border:1px solid var(--border);background:var(--card);border-radius:10px;padding:20px 22px;margin-bottom:14px}
+  .feature h2{font-size:18px;margin:0 0 6px;font-weight:650}
+  .feature p{margin:0;color:var(--muted);font-size:15.5px}
+  .num{display:inline-block;font-size:13px;font-weight:700;color:var(--muted);margin-bottom:8px}
+  .how{margin-top:40px}
+  .how h2{font-size:20px;margin:0 0 12px;font-weight:650}
+  .how table{width:100%;border-collapse:collapse;font-size:15px}
+  .how th,.how td{text-align:left;padding:10px 12px;border:1px solid var(--border);vertical-align:top}
+  .how th{background:var(--card);font-weight:650}
+  .how td:first-child{font-weight:600;white-space:nowrap}
+  @media (max-width:480px){.how td:first-child{white-space:normal}}
+  .why{margin-top:36px;border-top:1px solid var(--border);padding-top:24px}
+  .why h2{font-size:20px;margin:0 0 8px;font-weight:650}
+  .why p{margin:0;color:var(--muted);font-size:15.5px}
+  .version{border:1px solid var(--border);border-radius:10px;padding:14px 22px;margin:-20px 0 28px;font-size:15.5px;color:var(--muted)}
+  .version strong{color:var(--fg);font-weight:650}
+  .tags{margin-top:36px;border-top:1px solid var(--border);padding-top:24px}
+  .tags h2{font-size:20px;margin:0 0 14px;font-weight:650}
+  .tags ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+  .tags li{border:1px solid var(--border);background:var(--card);border-radius:999px;padding:5px 13px;font-size:14px;color:var(--muted)}
 </style>
 </head>
 <body>
 <main>
-<h1>Gboard Changes</h1>
-<p class="intro">Three small changes to make Gboard easier to use.</p>
+  <h1>Gboard Changes</h1>
+  <p class="intro">Three small changes to make Gboard easier to use.</p>
 
-<p class="version">Base version: <strong>Gboard 18.5.6 beta</strong> &nbsp;·&nbsp; Changes were made on this version</p>
+  <p class="version">Base version: <strong>Gboard 18.5.6 beta</strong> &nbsp;·&nbsp; Changes were made on this version</p>
 
-<section class="feature">
-<span class="num">1</span>
-<h2>No clipboard limit</h2>
-<p>Copied items stay in the clipboard. They are not deleted after a short time, and new items do not push out the old ones.</p>
-</section>
+  <section class="feature">
+    <span class="num">1</span>
+    <h2>No clipboard limit</h2>
+    <p>Copied items stay in the clipboard. They are not deleted after a short time, and new items do not push out the old ones.</p>
+  </section>
 
-<section class="feature">
-<span class="num">2</span>
-<h2>Microphone stays on for 60 seconds</h2>
-<p>Voice typing waits for you. The microphone does not turn off after a few seconds — it stays on for a full minute.</p>
-</section>
+  <section class="feature">
+    <span class="num">2</span>
+    <h2>Microphone stays on for 60 seconds</h2>
+    <p>Voice typing waits for you. The microphone does not turn off after a few seconds — it stays on for a full minute.</p>
+  </section>
 
-<section class="feature">
-<span class="num">3</span>
-<h2>Always-on microphone</h2>
-<p>The microphone opens by itself when the keyboard opens. No need to tap the microphone button every time.</p>
-</section>
+  <section class="feature">
+    <span class="num">3</span>
+    <h2>Always-on microphone</h2>
+    <p>The microphone opens by itself when the keyboard opens. No need to tap the microphone button every time.</p>
+  </section>
 
-<section class="how">
-<h2>How it was done</h2>
-<table>
-<thead>
-<tr><th>Change</th><th>Technical detail</th></tr>
-</thead>
-<tbody>
-<tr><td>Clipboard</td><td>Item limit raised to 100; auto-expiry removed.</td></tr>
-<tr><td>Microphone — 60 seconds</td><td>Listening timeout changed from 5 seconds to 60 seconds.</td></tr>
-<tr><td>Always-on microphone</td><td>Auto-start gates (wee.o / wee.n) enabled, so the microphone starts when the keyboard opens.</td></tr>
-</tbody>
-</table>
-</section>
+  <section class="how">
+    <h2>How it was done</h2>
+    <table>
+      <thead>
+        <tr><th>Change</th><th>Technical detail</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Clipboard</td><td>Item limit raised to 100; auto-expiry removed.</td></tr>
+        <tr><td>Microphone — 60 seconds</td><td>Listening timeout changed from 5 seconds to 60 seconds.</td></tr>
+        <tr><td>Always-on microphone</td><td>Auto-start gates (wee.o / wee.n) enabled, so the microphone starts when the keyboard opens.</td></tr>
+      </tbody>
+    </table>
+  </section>
 
-<section class="why">
-<h2>Why it isn't published</h2>
-<p>This is a modified Google app, so it is not published as an APK. There is no release — this page is only a description.</p>
-</section>
+  <section class="why">
+    <h2>Why it isn't published</h2>
+    <p>This is a modified Google app, so it is not published as an APK. There is no release — this page is only a description.</p>
+  </section>
 
-<section class="tags">
-<h2>Tags</h2>
-<ul>
-<li>Gboard clipboard limit</li>
-<li>Gboard clipboard history</li>
-<li>clipboard history</li>
-<li>Gboard clipboard limit 100</li>
-<li>Gboard clipboard items disappearing</li>
-<li>voice typing auto start</li>
-<li>always on microphone</li>
-<li>microphone timeout 60 seconds</li>
-<li>Gboard voice input auto open</li>
-<li>Gboard voice typing timeout</li>
-<li>Gboard microphone turns off too quickly</li>
-<li>Gboard keep microphone on</li>
-<li>Gboard microphone auto start</li>
-<li>Gboard 18.5.6 beta</li>
-</ul>
-</section>
+  <section class="tags">
+    <h2>Tags</h2>
+    <ul>
+      <li>Gboard clipboard limit</li>
+      <li>Gboard clipboard history</li>
+      <li>clipboard history</li>
+      <li>Gboard clipboard limit 100</li>
+      <li>Gboard clipboard limit problem</li>
+      <li>Gboard clipboard items disappearing</li>
+      <li>Gboard clipboard history not saving</li>
+      <li>Gboard clipboard keeps clearing</li>
+      <li>Gboard clipboard keeps deleting items</li>
+      <li>Gboard clipboard items deleted automatically</li>
+      <li>Gboard clipboard history keeps disappearing</li>
+      <li>Gboard clipboard not saving copied items</li>
+      <li>Gboard clipboard clears itself</li>
+      <li>Gboard clipboard empties itself</li>
+      <li>Gboard clipboard items vanish after copy</li>
+      <li>Gboard copied items disappear from clipboard</li>
+      <li>Gboard clipboard only saves a few items</li>
+      <li>Gboard clipboard limit too low</li>
+      <li>Gboard clipboard history limit</li>
+      <li>Gboard clipboard history empty</li>
+      <li>Gboard clipboard history missing</li>
+      <li>Gboard clipboard history not working</li>
+      <li>Gboard clipboard not keeping history</li>
+      <li>Gboard clipboard items expire too fast</li>
+      <li>Gboard clipboard auto delete problem</li>
+      <li>Gboard clipboard loses copied text</li>
+      <li>Gboard clipboard pasted items gone</li>
+      <li>Gboard clipboard stops saving</li>
+      <li>how to increase Gboard clipboard limit</li>
+      <li>how to keep Gboard clipboard history</li>
+      <li>how to stop Gboard clipboard from clearing</li>
+      <li>how to stop Gboard from deleting clipboard items</li>
+      <li>how to save more items in Gboard clipboard</li>
+      <li>Gboard clipboard unlimited items</li>
+      <li>Gboard clipboard keep items longer</li>
+      <li>voice typing auto start</li>
+      <li>always on microphone</li>
+      <li>microphone timeout 60 seconds</li>
+      <li>Gboard voice input auto open</li>
+      <li>Gboard voice typing timeout</li>
+      <li>Gboard microphone turns off too quickly</li>
+      <li>Gboard keep microphone on</li>
+      <li>Gboard microphone auto start</li>
+      <li>Gboard voice typing stops while speaking</li>
+      <li>Gboard microphone closes after 5 seconds</li>
+      <li>Gboard microphone keeps turning off</li>
+      <li>how to keep Gboard microphone open</li>
+      <li>Gboard auto voice typing not working</li>
+      <li>Gboard voice typing stops mid sentence</li>
+      <li>Gboard microphone turns off while talking</li>
+      <li>Gboard voice input stops listening</li>
+      <li>Gboard voice typing keeps stopping</li>
+      <li>Gboard dictation keeps stopping</li>
+      <li>Gboard microphone shuts off automatically</li>
+      <li>Gboard microphone closes by itself</li>
+      <li>Gboard microphone timeout too short</li>
+      <li>Gboard voice typing time limit</li>
+      <li>Gboard voice typing timeout problem</li>
+      <li>Gboard speech to text stops automatically</li>
+      <li>Gboard voice input not staying on</li>
+      <li>Gboard microphone stops while dictating</li>
+      <li>Gboard voice typing closes on its own</li>
+      <li>Gboard microphone disconnects while speaking</li>
+      <li>Gboard voice typing not working properly</li>
+      <li>Gboard voice typing stops after a few seconds</li>
+      <li>Gboard microphone only stays on 5 seconds</li>
+      <li>how to extend Gboard voice typing time</li>
+      <li>how to make Gboard microphone stay on longer</li>
+      <li>how to stop Gboard microphone from turning off</li>
+      <li>how to keep voice typing on in Gboard</li>
+      <li>Gboard microphone always on</li>
+      <li>Gboard voice typing auto open not working</li>
+      <li>Gboard keyboard microphone auto start</li>
+      <li>Gboard 18.5.6 beta</li>
+    </ul>
+  </section>
 </main>
 </body>
 </html>
