@@ -34,6 +34,16 @@
 .feature h2{font-size:18px;margin:0 0 6px;font-weight:650}
 .feature p{margin:0;color:var(--muted);font-size:15.5px}
 .num{display:inline-block;font-size:13px;font-weight:700;color:var(--muted);margin-bottom:8px}
+.how{margin-top:40px}
+.how h2{font-size:20px;margin:0 0 12px;font-weight:650}
+.how table{width:100%;border-collapse:collapse;font-size:15px}
+.how th,.how td{text-align:left;padding:10px 12px;border:1px solid var(--border);vertical-align:top}
+.how th{background:var(--card);font-weight:650}
+.how td:first-child{font-weight:600;white-space:nowrap}
+@media (max-width:480px){.how td:first-child{white-space:normal}}
+.why{margin-top:36px;border-top:1px solid var(--border);padding-top:24px}
+.why h2{font-size:20px;margin:0 0 8px;font-weight:650}
+.why p{margin:0;color:var(--muted);font-size:15.5px}
 </style>
 </head>
 <body>
@@ -57,6 +67,25 @@
     <span class="num">3</span>
     <h2>Always-on microphone</h2>
     <p>The microphone opens by itself when the keyboard opens. No need to tap the microphone button every time.</p>
+  </section>
+
+  <section class="how">
+    <h2>How it was done</h2>
+    <table>
+      <thead>
+        <tr><th>Change</th><th>Technical detail</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Clipboard</td><td>Item limit raised to 100; auto-expiry removed.</td></tr>
+        <tr><td>Microphone — 60 seconds</td><td>Listening timeout changed from 5 seconds to 60 seconds.</td></tr>
+        <tr><td>Always-on microphone</td><td>Auto-start gates (wee.o / wee.n) enabled, so the microphone starts when the keyboard opens.</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="why">
+    <h2>Why it isn't published</h2>
+    <p>This is a modified Google app, so it is not published as an APK. There is no release — this page is only a description.</p>
   </section>
 </main>
 </body>
