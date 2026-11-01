@@ -30,13 +30,47 @@ The microphone opens by itself when the keyboard opens. No need to tap the micro
 
 This is a modified Google app, so it is not published as an APK. There is no release — this page is only a description.
 
+## Test video
+
+![Test video](test-video.gif)
+
 ## Tags
 
 - Gboard clipboard limit
 - Gboard clipboard history
 - clipboard history
 - Gboard clipboard limit 100
+- Gboard clipboard limit problem
 - Gboard clipboard items disappearing
+- Gboard clipboard history not saving
+- Gboard clipboard keeps clearing
+- Gboard clipboard keeps deleting items
+- Gboard clipboard items deleted automatically
+- Gboard clipboard history keeps disappearing
+- Gboard clipboard not saving copied items
+- Gboard clipboard clears itself
+- Gboard clipboard empties itself
+- Gboard clipboard items vanish after copy
+- Gboard copied items disappear from clipboard
+- Gboard clipboard only saves a few items
+- Gboard clipboard limit too low
+- Gboard clipboard history limit
+- Gboard clipboard history empty
+- Gboard clipboard history missing
+- Gboard clipboard history not working
+- Gboard clipboard not keeping history
+- Gboard clipboard items expire too fast
+- Gboard clipboard auto delete problem
+- Gboard clipboard loses copied text
+- Gboard clipboard pasted items gone
+- Gboard clipboard stops saving
+- how to increase Gboard clipboard limit
+- how to keep Gboard clipboard history
+- how to stop Gboard clipboard from clearing
+- how to stop Gboard from deleting clipboard items
+- how to save more items in Gboard clipboard
+- Gboard clipboard unlimited items
+- Gboard clipboard keep items longer
 - voice typing auto start
 - always on microphone
 - microphone timeout 60 seconds
@@ -45,8 +79,34 @@ This is a modified Google app, so it is not published as an APK. There is no rel
 - Gboard microphone turns off too quickly
 - Gboard keep microphone on
 - Gboard microphone auto start
+- Gboard voice typing stops while speaking
+- Gboard microphone closes after 5 seconds
+- Gboard microphone keeps turning off
+- how to keep Gboard microphone open
+- Gboard auto voice typing not working
+- Gboard voice typing stops mid sentence
+- Gboard microphone turns off while talking
+- Gboard voice input stops listening
+- Gboard voice typing keeps stopping
+- Gboard dictation keeps stopping
+- Gboard microphone shuts off automatically
+- Gboard microphone closes by itself
+- Gboard microphone timeout too short
+- Gboard voice typing time limit
+- Gboard voice typing timeout problem
+- Gboard speech to text stops automatically
+- Gboard voice input not staying on
+- Gboard microphone stops while dictating
+- Gboard voice typing closes on its own
+- Gboard microphone disconnects while speaking
+- Gboard voice typing not working properly
+- Gboard voice typing stops after a few seconds
+- Gboard microphone only stays on 5 seconds
+- how to extend Gboard voice typing time
+- how to make Gboard microphone stay on longer
+- how to stop Gboard microphone from turning off
+- how to keep voice typing on in Gboard
+- Gboard microphone always on
+- Gboard voice typing auto open not working
+- Gboard keyboard microphone auto start
 - Gboard 18.5.6 beta
-
-## Test video
-
-![Test video](test-video.gif)
