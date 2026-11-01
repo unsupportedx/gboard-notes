@@ -30,8 +30,23 @@ The microphone opens by itself when the keyboard opens. No need to tap the micro
 
 This is a modified Google app, so it is not published as an APK. There is no release — this page is only a description.
 
+## Tags
+
+- Gboard clipboard limit
+- Gboard clipboard history
+- clipboard history
+- Gboard clipboard limit 100
+- Gboard clipboard items disappearing
+- voice typing auto start
+- always on microphone
+- microphone timeout 60 seconds
+- Gboard voice input auto open
+- Gboard voice typing timeout
+- Gboard microphone turns off too quickly
+- Gboard keep microphone on
+- Gboard microphone auto start
+- Gboard 18.5.6 beta
+
 ## Test video
 
-<video controls src="test-video.mp4" width="100%">
-  <source src="test-video.mp4" type="video/mp4">
-</video>
+![Test video](test-video.gif)
