@@ -1,8 +1,10 @@
+Live preview: https://unsupportedx.github.io/gboard-notes/
+
 # Gboard Changes
 
 Three small changes to make Gboard easier to use.
 
-Base version: Gboard 18.5.6 beta · Final clean version: v22
+Base version: Gboard 18.5.6 beta · Changes were made on this version
 
 ## No clipboard limit
 
@@ -27,3 +29,9 @@ The microphone opens by itself when the keyboard opens. No need to tap the micro
 ## Why it isn't published
 
 This is a modified Google app, so it is not published as an APK. There is no release — this page is only a description.
+
+## Test video
+
+<video controls src="test-video.mp4" width="100%">
+  <source src="test-video.mp4" type="video/mp4">
+</video>
